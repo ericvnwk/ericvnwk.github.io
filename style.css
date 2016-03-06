@@ -1,0 +1,63 @@
+body {
+font-family: 'Open Sans', sans-serif;
+width:2048px;
+height:1536px;
+background-image: url(assets/graphy.png), radial-gradient(rgb(60, 137, 199), rgb(50, 100, 140));
+background-position: center;
+}
+
+/*============= STYLES FOR TEXT ===========*/
+
+h1 {
+  color:white;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 60px;
+  color: white;
+  margin-top: none;
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 0;
+}
+
+/*============== PAGE STYLES =============*/
+
+.scroll {
+  margin: auto;
+  width:1800px;
+  height:1000px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.superhero {
+  max-height: 1000px;
+  margin-bottom: 0;
+  cursor: pointer;
+  display: inline;
+  vertical-align: top;
+}
+
+/*=========== HIDHING PAGES ============*/
+
+#superheros {
+  visibility: hidden;
+}
