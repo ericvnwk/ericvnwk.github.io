@@ -1,12 +1,7 @@
-html {
-  height:100%;
-}
-
 body {
 font-family: 'Open Sans', sans-serif;
 width:1024px;
 height:748px;
-max-height: 100%;
 color: white;
 margin: 0;
 background-image: url(assets/graphy.png), radial-gradient(rgb(60, 137, 199), rgb(50, 100, 140));
