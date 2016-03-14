@@ -2,6 +2,7 @@ body {
 font-family: 'Open Sans', sans-serif;
 width:1024px;
 height:748px;
+color: white;
 margin: 0;
 background-image: url(assets/graphy.png), radial-gradient(rgb(60, 137, 199), rgb(50, 100, 140));
 background-position: center;
@@ -11,13 +12,12 @@ background-clip: content-box;
 /*============= STYLES FOR TEXT ===========*/
 
 p {
-  color: white;
+  margin-top: 10px;
   font-size: 12pt;
   font-weight: 300;
 }
 
 h1 {
-  color:white;
   font-weight: 800;
   font-size: 40pt;
 }
@@ -29,8 +29,31 @@ h2 {
 
 h3 {
   font-size: 30pt;
-  color: white;
   margin-top: none;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 16pt;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 20pt;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
 }
 
 .title {
@@ -56,6 +79,7 @@ h3 {
 }
 
 .character-info {
+  color: white;
   position: absolute;
   top: 40px;
   right: 40px;
@@ -89,6 +113,24 @@ h3 {
   display: inline-block;
 }
 
+.powers {
+  margin-top: -10px;
+  margin-bottom: 5px;
+  font-size: 20pt;
+  font-weight:400;
+  line-height: 1.5;
+}
+
+
+/*============== WRITING ANIMATION ==========*/
+
+.text-box p {
+  color: white;
+  font-size: 12pt;
+  font-weight: 300;
+  width: 100%;
+}
+
 /*============== PAGE STYLES =============*/
 
 .scroll {
@@ -111,6 +153,8 @@ h3 {
 }
 
 .btn-box {
+  position: absolute;
+  bottom: 80px;
   width:1024px;
   height:25px;
   margin-left:25px;
@@ -127,13 +171,59 @@ h3 {
 .text-box {
   width: 400px;
   height: auto;
-  max-height: 450px;
+  max-height: 470px;
   overflow-y: scroll;
-  margin-top: 30px;
-  margin-right: 40px;
+  margin-top: 35px;
+  padding: 5px 15px 5px 15px;
   background-color: rgba(19, 88, 111, 0.5);
-  padding: 15px;
-  float: right;
+  position:absolute;
+  right: 40px;
+  outline: rgba(19, 88, 111, 0.25) solid 5px;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  animation: outline  2.5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Chrome, Safari, Opera */
+  @-webkit-keyframes outline {
+  50% {outline-offset: 15px;}
+  }
+
+/* Standard syntax */
+  @keyframes outline {
+  50% {outline-offset: 15px;}
+  }
+
+/*=========== STYLES FOR THUMBNAILS ===========*/
+
+.img-tile {
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.thumbs {
+  position: relative;
+}
+
+.thumbs h4 {
+  position: absolute;
+  left: 145px;
+  top: -15px;
+}
+
+.thumbs p {
+  width: 230px;
+  position: absolute;
+  left: 145px;
+  top: 40px;
+}
+
+.thumbnail {
+  margin-top: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
 }
 
 /*=========== CIRCLES and GRAPHICS ==========*/
@@ -171,12 +261,20 @@ h3 {
 }
 
 #batman-circle5 {
-  top:25px;
-  left:240px;
+  top:120px;
+  left:250px;
 }
 
 /*=========== HIDHING PAGES ============*/
 
 .hidden {
   display: none;
+}
+
+.v-hidden {
+  display: none;
+}
+
+.pop {
+  transform: scale(0);
 }
