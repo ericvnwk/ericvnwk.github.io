@@ -7,7 +7,11 @@ margin: 0;
 background-image: url(assets/graphy.png), radial-gradient(rgb(60, 137, 199), rgb(50, 100, 140));
 background-position: center;
 background-clip: content-box;
-overflow: hidden;
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
 }
 
 #content {
@@ -164,7 +168,7 @@ a:visited {
 
 .btn-box {
   position: absolute;
-  bottom: 80px;
+  bottom: 40px;
   width: 1024px;
   height: 25px;
   text-align: center;
