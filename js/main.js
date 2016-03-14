@@ -1,3 +1,10 @@
+$('.superhero a').click(
+  function(){
+    $('#batman').removeClass('slide')
+
+  }
+)
+
 $('.btn-box a').click(
   function(){
     $('.text-box').fadeOut(500)

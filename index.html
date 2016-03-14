@@ -10,12 +10,14 @@
 </head>
 <body>
 
-  <section id="superheroes" class="hidden">
+  <section id="content superheroes" class="">
     <h1 class="title">SUPERHERO INDEX</h1>
     <h2 class="subtitle">SCROLL &amp; CHOOSE A SUPERHERO</h2>
     <div class="scroll">
-      <div class="superhero"><img src="assets/batman.png" alt=""/>
-        <h3 class="name"> BATMAN </h3></div>
+      <div class="superhero-ws"><a href="#batman">
+        <h3 class="name">  </h3></a></div>
+      <div class="superhero"><a href="#batman"><img src="assets/batman.png" alt=""/>
+        <h3 class="name"> BATMAN </h3></a></div>
         <div class="superhero"><img src="assets/thor.png" alt=""/>
           <h3 class="name"> THOR </h3></div>
           <div class="superhero"><img src="assets/spiderman.png" alt=""/>
@@ -24,10 +26,12 @@
               <h3 class="name"> CAPTAIN AMERICA </h3></div>
               <div class="superhero"><img src="assets/superman.png" alt=""/>
                 <h3 class="name"> SUPERMAN </h3></div>
+                <div class="superhero-ws"><a href="#batman">
+                  <h3 class="name">  </h3></a></div>
               </div>
             </section>
 
-            <section id="batman" class="">
+            <section id="content batman" class="v-hidden">
                 <h1 class="hero-name">BATMAN</h1>
                 <p class="character-info"><a href="#character-info">[CHARACTER INFO]</a></p>
               <div class="superhero-select"><img src="assets/batman.png" alt=""/>
@@ -37,7 +41,7 @@
                 <div id="batman-circle4"class="circle"></div>
                 <div id="batman-circle5"class="circle"></div>
               </div>
-              <div id="origin" class="text-box v-hidden">
+              <div id="origin" class="text-box v-hidden pop">
                 <div class="text-cover"></div>
                 <h5>[ ORIGIN ]</h5>
                 <p> A family outing to the cinema ended in tragedy for young Bruce Wayne. Walking homeward, Bruce, his father, Thomas, and mother, Martha,
@@ -53,7 +57,7 @@
                   bleeding in his study at Wayne Manor Bruce knew that he had to first strike fear in the hearts of his foes. Just then, a bat crashed
                   through the study window, giving Bruce the inspiration he needed.</p>
               </div>
-              <div id="history" class="text-box v-hidden">
+              <div id="history" class="text-box v-hidden pop">
                 <h5>[ HISTORY ]</h5>
                 <p>Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil and strikes terror into the hearts of
                    criminals everywhere. In his secret identity he is Bruce Wayne, billionaire industrialist and notorious playboy. Although he has no
@@ -136,6 +140,7 @@
                 <h5>[ ALLIES ]</h5>
                 <p> </p>
               </div>
+
               <nav class="btn-box">
               <ul>
                 <li class="buttons"><a href="#origin">ORIGIN</a></li>
@@ -145,6 +150,7 @@
                 <li class="buttons"><a href="#allies">ALLIES</a></li>
               </ul>
               </nav>
+
             </section>
 
             <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
