@@ -1,7 +1,7 @@
 body {
 font-family: 'Open Sans', sans-serif;
 width:1024px;
-height:748px;
+height:768px;
 color: white;
 margin: 0;
 background-image: url(assets/graphy.png), radial-gradient(rgb(60, 137, 199), rgb(50, 100, 140));
@@ -9,9 +9,6 @@ background-position: center;
 background-clip: content-box;
 }
 
-#content {
-  position: relative;
-}
 
 /*============= STYLES FOR TEXT ===========*/
 
@@ -138,23 +135,19 @@ a:visited {
 .scroll {
   margin: auto;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 280px;
+  padding-right: 280px;
   box-sizing: border-box;
   height: 600px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-}
-
-.superhero-ws {
-  width:290px;
-  display: inline-block;
-
+  position: absolute;
+  top: 160px;
 }
 
 .superhero {
   max-height: 750px;
-  cursor: pointer;
   display: inline-block;
   vertical-align: bottom;
   text-align: center;
@@ -163,9 +156,8 @@ a:visited {
 
 .btn-box {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   width: 1024px;
-  height: 25px;
   text-align: center;
 }
 
@@ -290,8 +282,9 @@ a:visited {
   transform: translateX(-100%);
 }
 
-#batman {
+.hero {
+  position: relative;
+  height: 768px;
+  width: 1024px;
   transition: all 1s ease-in-out;
 }
-
-/*============ SCROLL BAR STYLES =============*/
