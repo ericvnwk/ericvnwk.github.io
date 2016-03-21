@@ -78,6 +78,7 @@ a:visited {
   font-weight: 600;
   font-size: 20pt;
   line-height: 10%;
+  opacity: 1;
 }
 
 .hero-name {
@@ -90,8 +91,8 @@ a:visited {
 .character-info {
   color: white;
   position: absolute;
-  top: 30px;
-  right: 60px;
+  top: 40px;
+  right: 265px;
   margin:0;
   font-size: 20pt;
 }
@@ -128,6 +129,19 @@ a:visited {
   font-size: 20pt;
   font-weight:400;
   line-height: 1.5;
+}
+
+.close-btn {
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 10pt;
+  font-weight: 800;
+  padding:10px;
+  text-align: center;
+  float:right;
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
 
 
@@ -257,7 +271,6 @@ a:visited {
   padding: 20px;
   align-content: center;
 }
-
 
 #batman-circle1 {
   top:25px;

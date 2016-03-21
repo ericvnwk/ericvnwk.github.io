@@ -5,6 +5,13 @@ $('.superhero a').click(
   }
 )
 
+$('.close-btn a').click(
+  function(){
+    $( $(this).attr('href')).addClass('slide')
+    $('#superheroes').fadeIn(250)
+  }
+)
+
 $('.btn-box a, .character-info a').click(
   function(){
     $('.text-box').fadeOut(500)
