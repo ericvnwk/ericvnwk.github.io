@@ -11,3 +11,10 @@ $('.btn-box a, .character-info a').click(
     $( $(this).attr('href') ).fadeIn(750);
   }
 )
+
+$('.circle a').click(
+  function(){
+    $('.text-box').fadeOut(500)
+    $( $(this).attr('href') ).fadeIn(750);
+  }
+)
