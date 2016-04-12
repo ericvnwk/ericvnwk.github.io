@@ -1,323 +1,206 @@
 body {
-font-family: 'Open Sans', sans-serif;
-width:1024px;
-height:768px;
-color: white;
-margin: 0;
-background-image: url(assets/graphy.png), radial-gradient(rgb(60, 137, 199), rgb(50, 100, 140));
-background-position: center;
-background-clip: content-box;
-}
-
-
-/*============= STYLES FOR TEXT ===========*/
-
-p {
-  margin-top: 10px;
-  font-size: 12pt;
-  font-weight: 300;
-}
-
-h1 {
-  font-weight: 800;
-  font-size: 40pt;
-}
-
-h2 {
-  font-weight: 300;
-  font-size: 20pt;
-}
-
-h3 {
-  font-size: 20pt;
-  opacity: .75;
-  margin-top: 15px;
-}
-
-h4 {
-  font-weight: 400;
-  font-size: 16pt;
-}
-
-h5 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 600;
-  font-size: 20pt;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:link {
-  color: inherit;
-}
-
-a:visited {
-  color: inherit;
-}
-
-.title {
-  margin-top: 20px;
-  position: relative;
-  text-align: center;
-  margin-bottom: -5px;
-}
-
-.subtitle {
-  text-align: center;
-  margin-top: 0;
-}
-
-.character-sub {
-  text-transform: uppercase;
-}
-
-.character-point {
-  font-weight: 600;
-  font-size: 20pt;
-  line-height: 10%;
-  opacity: 1;
-}
-
-.hero-name {
-  position: absolute;
-  top:20px;
-  left:60px;
   margin:0;
-}
-
-.character-info {
+  margin:auto;
+  background-color: #d06e60;
+  width: auto;
+  font-family: 'Roboto' , sans-serif;
   color: white;
-  position: absolute;
-  top: 40px;
-  right: 265px;
-  margin:0;
-  font-size: 20pt;
+  max-width:1200px;
 }
 
-.buttons {
-  color: rgb(255, 255, 255);
-  font-size: 20pt;
-  font-weight: 600;
-  margin-right: 30px;
-  padding-bottom: 10px;
+.box {
+  width:auto;
+  margin: 5%;
+  height:100vh;
+  /*border: 5px;
   border-style: solid;
-  border-color: white;
-  border-width: 2px;
-  border-radius: 10px;
-  background-color: rgb(50, 100, 140);
-  width: 150px;
-  height: 30px;
-  text-align: center;
-  display: inline-block;
-}
-
-.btn-box a {
-  text-decoration: none;
-}
-
-.btn-box li {
-  list-type: none;
-  display: inline-block;
-}
-
-.powers {
-  margin-top: -10px;
-  margin-bottom: 5px;
-  font-size: 20pt;
-  font-weight:400;
-  line-height: 1.5;
-}
-
-.close-btn {
-  border-style: solid;
-  border-radius: 5px;
-  font-size: 10pt;
-  font-weight: 800;
-  padding:10px;
-  text-align: center;
-  float:right;
-  position: absolute;
-  right: 20px;
-  top: 30px;
-}
-
-
-/*============== WRITING ANIMATION ==========*/
-
-.text-box p {
-  color: white;
-  font-size: 12pt;
-  font-weight: 300;
-  width: 100%;
-}
-
-/*============== PAGE STYLES =============*/
-
-.scroll {
-  margin: auto;
-  width: 100%;
-  padding-left: 280px;
-  padding-right: 280px;
-  box-sizing: border-box;
-  height: 600px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  position: absolute;
-  top: 160px;
-}
-
-.superhero {
-  max-height: 750px;
-  display: inline-block;
-  vertical-align: bottom;
-  text-align: center;
-  margin-right: 80px;
-}
-
-.btn-box {
-  position: absolute;
-  bottom: 20px;
-  width: 1024px;
-  text-align: center;
-}
-
-.superhero-select {
-  position: absolute;
-  left: 60px;
-  top: 140px;
-}
-
-.text-box {
-  width: 400px;
-  height: auto;
-  max-height: 470px;
-  overflow-y: scroll;
-  padding: 5px 15px 5px 15px;
-  background-color: rgba(19, 88, 111, 0.5);
-  position:absolute;
-  top:140px;
-  right: 60px;
-  outline: rgba(19, 88, 111, 0.25) solid 5px;
-  -webkit-animation: outline 2.5s infinite; /* Chrome, Safari, Opera */
-  animation: outline  2.5s infinite;
-  animation-timing-function: ease-in-out;
-}
-
-/* Chrome, Safari, Opera */
-  @-webkit-keyframes outline {
-  50% {outline-offset: 15px;}
-  }
-
-/* Standard syntax */
-  @keyframes outline {
-  50% {outline-offset: 15px;}
-  }
-
-/*=========== STYLES FOR THUMBNAILS ===========*/
-
-.img-tile {
-  width: 100%;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-
-.thumbs {
-  display: inherit;
-}
-
-.thumbs h4 {
-  float:left;
-  margin-top:15px;
-  margin-left: 15px;
-  margin-bottom: 0px;
-}
-
-.thumbs p {
-  width: 250px;
-  float:left;
-  margin-left: 15px;
-}
-
-.thumbnail {
-  float:left;
-  margin-top: 20px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
-}
-
-/*=========== CIRCLES and GRAPHICS ==========*/
-
-.circle {
-  background-color: rgba(255, 255, 255, 0.5);
-  position:absolute;
-  float: left;
-  width: 10px;
-  height: 10px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 100%;
+  border-color: black;*/
+  position:relative;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.circle a {
-  padding: 20px;
-  align-content: center;
+#variant {
+  display: block;
 }
 
-#batman-circle1 {
-  top:25px;
-  left:240px;
+
+/*============== TYPE STYLES ===================*/
+
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: -15px;
 }
 
-#batman-circle2 {
-  top:200px;
-  left:265px;
+h2 {
+  text-transform: uppercase;
+  font-size:80px;
+  font-weight: 900;
+  margin: 0;
+  border: 5px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 120px;
+  min-width: 120px;
+  height:120px;
+  line-height: 120px;
+  text-align: center;
+  letter-spacing: -7px;
+  flex-basis: 120px;
 }
 
-#batman-circle3 {
-  top:285px;
-  left:340px;
+h3 {
+  margin-top:30px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: .875em;
+  width:5.25em;
+  flex-grow: 1;
 }
 
-#batman-circle4 {
-  top:325px;
-  left:60px;
+h3 span {
+  mix-blend-mode: multiply;
 }
 
-#batman-circle5 {
-  top:120px;
-  left:250px;
+p {
+  font-weight:100;
+  font-size: 20px;
 }
 
-/*=========== HIDING PAGES/TRANSITIONS ============*/
 
-.hidden {
-  display: none;
+/*================ PAGE STYLES =================*/
+
+.title img {
+  display: block;
+  margin: auto;
+  margin-top: 200px;
+  width: 90%;
 }
 
-.v-hidden {
-  display: none;
+.scroll-prompt {
+  text-transform: uppercase;
+  align-items: center;
+  width: 190px;
+  height:60px;
+  text-align: center;
+  margin:auto;
+  margin-top: 200px;
 }
 
-.pop {
-  transform: rotate(deg 360);
+.scroll-prompt img {
+  display: block;
+  margin:auto;
+  margin-top: -10px;
 }
 
-.slide {
-  transform: translateX(-100%);
+.intro {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-.hero {
+.item {
+  display: flex;
+  width:60%;
+  margin-left: 5%;
   position: relative;
-  height: 768px;
-  width: 1024px;
-  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+.list {
+  position: fixed;
+  top: 30px;
+  left: 100px;
+  width: 450px;
+  visibility: hidden;
+}
+
+/*================ IMAGE STYLES =================*/
+
+.images {
+  width:35%;
+  height: 35vh;
+  margin-left:-5%;
+  perspective: 100vh;
+}
+
+.images img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  max-height:100%;
+}
+
+/*=============== RESPONSIVE ================*/
+
+@media screen and (max-width:1024px){
+
+  h3 {
+    font-size: 60px;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .images {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+
+
+@media screen and (max-width:768px){
+
+  h3 {
+    font-size: 60px;
+  }
+
+  .images {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .images img {
+    margin: auto;
+  }
+
+  .item {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+
+
+@media (max-width:480px){
+
+    h2 {
+      align-self: center;
+      font-size: 40px;
+      min-width: 60px;
+      height: 60px;
+      flex-basis: 60px;
+      line-height: 65px;
+    }
+
+    h3 {
+      font-size: 55px;
+      text-align: center;
+      align-self: center;
+      width: 95%;
+      margin-bottom:10px;
+      margin-left: 0;
+    }
+
+    .item {
+      flex-direction: column;
+    }
 }
